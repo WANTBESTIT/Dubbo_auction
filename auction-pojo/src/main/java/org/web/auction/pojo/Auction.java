@@ -1,0 +1,129 @@
+package org.web.auction.pojo;
+
+import java.io.Serializable;
+import java.util.Date;
+import java.util.List;
+
+public class Auction implements Serializable {
+    private Integer auctionid;
+
+    private String auctionname;
+
+    private Double auctionstartprice;
+
+    private Double auctionupset;
+
+    private Date auctionstarttime;
+
+    private Date auctionendtime;
+
+    private String auctionpic;
+
+    private String auctionpictype;
+
+    private String auctiondesc;
+
+    private List<Auctionrecord> auctionrecordList;  //多方
+
+    private static final long serialVersionUID = 1L;
+
+    public Integer getAuctionid() {
+        return auctionid;
+    }
+
+    public void setAuctionid(Integer auctionid) {
+        this.auctionid = auctionid;
+    }
+
+    public String getAuctionname() {
+        return auctionname;
+    }
+
+    public void setAuctionname(String auctionname) {
+        this.auctionname = auctionname;
+    }
+
+    public Double getAuctionstartprice() {
+        return auctionstartprice;
+    }
+
+    public void setAuctionstartprice(Double auctionstartprice) {
+        this.auctionstartprice = auctionstartprice;
+    }
+
+    public Double getAuctionupset() {
+        return auctionupset;
+    }
+
+    public void setAuctionupset(Double auctionupset) {
+        this.auctionupset = auctionupset;
+    }
+
+    public Date getAuctionstarttime() {
+        return auctionstarttime;
+    }
+
+    public void setAuctionstarttime(Date auctionstarttime) {
+        this.auctionstarttime = auctionstarttime;
+    }
+
+    public Date getAuctionendtime() {
+        return auctionendtime;
+    }
+
+    public void setAuctionendtime(Date auctionendtime) {
+        this.auctionendtime = auctionendtime;
+    }
+
+    public String getAuctionpic() {
+        return auctionpic;
+    }
+
+    public void setAuctionpic(String auctionpic) {
+        this.auctionpic = auctionpic;
+    }
+
+    public String getAuctionpictype() {
+        return auctionpictype;
+    }
+
+    public void setAuctionpictype(String auctionpictype) {
+        this.auctionpictype = auctionpictype;
+    }
+
+    public String getAuctiondesc() {
+        return auctiondesc;
+    }
+
+    public void setAuctiondesc(String auctiondesc) {
+        this.auctiondesc = auctiondesc;
+    }
+
+    public List<Auctionrecord> getAuctionrecordList() {
+        return auctionrecordList;
+    }
+
+    public void setAuctionrecordList(List<Auctionrecord> auctionrecordList) {
+        this.auctionrecordList = auctionrecordList;
+    }
+
+    @Override
+    public String toString() {
+        StringBuilder sb = new StringBuilder();
+        sb.append(getClass().getSimpleName());
+        sb.append(" [");
+        sb.append("Hash = ").append(hashCode());
+        sb.append(", auctionid=").append(auctionid);
+        sb.append(", auctionname=").append(auctionname);
+        sb.append(", auctionstartprice=").append(auctionstartprice);
+        sb.append(", auctionupset=").append(auctionupset);
+        sb.append(", auctionstarttime=").append(auctionstarttime);
+        sb.append(", auctionendtime=").append(auctionendtime);
+        sb.append(", auctionpic=").append(auctionpic);
+        sb.append(", auctionpictype=").append(auctionpictype);
+        sb.append(", auctiondesc=").append(auctiondesc);
+        sb.append(", serialVersionUID=").append(serialVersionUID);
+        sb.append("]");
+        return sb.toString();
+    }
+}
